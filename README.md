@@ -119,6 +119,37 @@ Example:
 
 20260403-184512_Station_1.mp3
 
+Finding Your Audio Device
+
+tonetrix uses PyAudio to capture audio from your system.
+You must select the correct input device index for your scanner, SDR, or sound card.
+
+When tonetrix starts, it prints all available input devices:
+
+Available input devices:
+  index=0 name=Built-in Audio rate=48000
+  index=1 name=USB Audio Device rate=48000
+
+Set the desired device index in the configuration file:
+
+input_device_index = 1
+
+If you are unsure which device is correct, Linux tools can help.
+
+List recording devices:
+
+arecord -l
+
+List ALSA devices:
+
+aplay -l
+
+You can also test recording audio directly:
+
+arecord -D plughw:1,0 test.wav
+
+If the test recording works, that device should also work with tonetrix.
+
 ## License
 
 tonetrix is released under the GNU General Public License v3.0
