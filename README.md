@@ -2,7 +2,7 @@
 tonetrix detects Motorola-style two-tone paging sequences from a live audio input and automatically records the associated dispatch audio.
 # tonetrix
 
-tonetrix (pronounced "tone-tricks" or "toe-net-ricks", either is acceptable) is a Python program that detects Motorola-style two-tone paging
+tonetrix (pronounced "tone-tricks" or "toe-net-ricks", both are acceptable) is a Python program that detects Motorola-style two-tone paging
 sequences from a live audio input and automatically records the
 associated dispatch audio.
 
